@@ -1,0 +1,1 @@
+Fixed :meth:`monkeypatch.delattr() <pytest.MonkeyPatch.delattr>`, :meth:`monkeypatch.setitem() <pytest.MonkeyPatch.setitem>`, and :meth:`monkeypatch.delitem() <pytest.MonkeyPatch.delitem>` leaving stale entries on the undo stack when the underlying mutation fails, causing errors during teardown.
